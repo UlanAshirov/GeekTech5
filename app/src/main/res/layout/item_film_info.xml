@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_height="400dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_film"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/film_item_title"
+        app:layout_constraintTop_toBottomOf="@+id/img_film"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/film_item_original_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Original title"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/film_item_title"/>
+
+
+    <TextView
+        android:id="@+id/film_item_title_romanised"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Original title romanised"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/film_item_original_title"/>
+
+
+    <TextView
+        android:id="@+id/film_item_directory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Directory"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/film_item_title_romanised"/>
+
+
+    <TextView
+        android:id="@+id/film_item_producer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Producer"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/film_item_directory"/>
+    <TextView
+        android:id="@+id/film_item_release_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Release date"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/film_item_producer"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
